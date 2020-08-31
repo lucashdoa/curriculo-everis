@@ -507,6 +507,7 @@ body main #right-side .hexagon-icon-fill-small .fa {
 
 .profile-picture {
   height: 140px;
+  width: 100%;
 }
 
 .skill-list-item {

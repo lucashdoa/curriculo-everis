@@ -447,6 +447,9 @@ body main #right-side .hexagon-icon-fill-small .fa {
 
 /*Movil*/
 @media only screen and (max-width: 40em) {
+  #everis-logo {
+    display: none;
+  }
   body main .do-toggle {
     right: 0;
     margin-top: -20px;
@@ -482,6 +485,9 @@ body main #right-side .hexagon-icon-fill-small .fa {
 }
 /*iPad*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #everis-logo {
+    display: none;
+  }
   body main .info-content {
     padding: 0 8px;
   }

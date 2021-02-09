@@ -525,3 +525,22 @@ body {
   overflow: auto;
   background-color: #93ae2c !important;
 }
+
+#depo {
+  background-color: #ffffff;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 5px 2px #b1b1b1;
+  -moz-box-shadow: 0 0 5px 2px #b1b1b1;
+  box-shadow: 0 0 5px 2px #b1b1b1;
+  padding: 3em;
+}
+
+#depo-author {
+  margin-top: 10px;
+  float: right;
+}
+
+.highlight-link {
+  color: #a70064;
+  font-weight: bold;
+}

@@ -221,7 +221,6 @@
               <li class="skill-list-item">Execução manual de Casos de Teste e gerenciamento utilizando ferramenta HP ALM Quality Center.</li>
             </ul>
           </div>
-          <li><label>Certificações (BSTQB/ISTQB): </label><a href="#"> Nenhuma até o momento</a></li>
         </ul>
       </section>
       <hr>
@@ -240,15 +239,15 @@
           </li>
           <div v-if="listTwo">
             <ul>
-              <li class="skill-list-item">Trabalhando atualmente com as tecnologias: Gauge e Taiko com Node.js e utilizando metodologia BDD;</li>
-              <li class="skill-list-item">Bom domínio de tecnologias Web Front-End: HTML, CSS e JavaScript;</li>
+              <li class="skill-list-item">Trabalhando atualmente com as tecnologias: Node.js/Taiko/Gauge(BDD);</li>
+              <li class="skill-list-item">Bom domínio da stack Java/jUnit/Selenium WebDriver/Cucumber/Eclipse IDE;</li>
+              <li class="skill-list-item">Bom domínio de tecnologias Web Front-End: HTML, CSS e JavaScript.</li>
               <!-- <li class="skill-list-item">Bom domínio da linguagem Java</li> -->
-              <li class="skill-list-item">Experiência profissional com linguagem Python utilizando framework Django;</li>
-              <li class="skill-list-item">Conhecimento de Framework JavaScript Vue.js;</li>
-              <li class="skill-list-item">Conhecimento de alguns Frameworks CSS: Bootstrap, Semantic.ui.</li>
+              <!-- <li class="skill-list-item">Experiência profissional com linguagem Python utilizando framework Django;</li> -->
+              <!-- <li class="skill-list-item">Conhecimento de Framework JavaScript Vue.js;</li> -->
+              <!-- <li class="skill-list-item">Conhecimento de alguns Frameworks CSS: Bootstrap, Semantic.ui.</li> -->
             </ul>
           </div>
-
         </ul>
       </section>
       <hr>
@@ -256,17 +255,18 @@
         <div class="hexagon-icon">
           <i class="fa fa-trophy"></i>
         </div>
-        <h3>CERTIFICADOS</h3>
+        <h3>CERTIFICADOS E CERTIFICAÇÕES</h3>
         <a href="javascript:void(0)" class="do-toggle"><i class="fa fa-chevron-down"></i></a>
       </section>
       <section class="info-content">
         <ul class="list-experience">
           <li><label>Certificados (everis): </label><a target="_blank" href="https://photos.app.goo.gl/h1yXdSYgs97as4dq9"> Google Fotos <i class="fa fa-external-link"></i></a></li>
           <li><label>OUTROS CERTIFICADOS: </label><a target="_blank" href="https://photos.app.goo.gl/dt5u899KooAx7d3A6"> Google Fotos <i class="fa fa-external-link"></i></a></li>
+          <li><label>Certificações (BSTQB/ISTQB): </label><a href="#"> Nenhuma até o momento</a></li>
         </ul>
       </section>
       <hr>
-      <section class="icon-title toggle-title">
+      <!-- <section class="icon-title toggle-title">
         <div class="hexagon-icon">
           <i class="fa fa-book"></i>
         </div>
@@ -278,7 +278,7 @@
           <li><label>Tutoriais Youtube</label><a target="_blank" href="https://www.youtube.com/playlist?list=PLv6FsfDQOOoAX5Z-VOxaCZ8Pei7iI6dBW"> Playlist <i class="fa fa-external-link"></i></a></li>
         </ul>
       </section>
-      <hr>
+      <hr> -->
       <section class="icon-title toggle-title">
         <div class="hexagon-icon">
           <i class="fa fa-calendar"></i>
@@ -288,7 +288,15 @@
       </section>
       <section class="info-content">
         <ul class="list-experience">
-          Nenhuma até o momento.
+          <li><label>Lista de Habilidades: </label>
+            <a v-if="!listThree" target="_blank" @click="showListThree"> Mostrar <i class="fa fa-caret-down"></i></a>
+            <a v-if="listThree" target="_blank" @click="hideListThree"> Esconder <i class=" fa fa-caret-up"></i></a>
+          </li>
+          <div v-if="listThree">
+            <ul>
+              <li class="skill-list-item"><span class="event-date">18/01/2021 - 21/01/2021</span> Semana do Teste Web Iterasys</li>
+            </ul>
+          </div>
         </ul>
       </section>
       <hr>
@@ -332,6 +340,7 @@
       data: {
         listOne: false,
         listTwo: false,
+        listThree: false,
       },
       methods: {
         showListOne() {
@@ -345,6 +354,12 @@
         },
         hideListTwo() {
           this.listTwo = false;
+        },
+        showListThree() {
+          this.listThree = true;
+        },
+        hideListThree() {
+          this.listThree = false;
         }
       }
     })
